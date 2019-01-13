@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 /*Custom Colors*/
 :root {
   --my-red: #F42525;
   --my-lightgrey: #DBDBDB;
-  --my-darkgrey: #BFBFBF; 
+  --my-darkgrey: #BFBFBF;
+}
+
+/*Custom Font*/
+@font-face {
+	font-family: League-Spartan;
+	src: url("../fonts/LeagueSpartan-Bold.otf");
 }
 
 * {
@@ -11,17 +19,46 @@
 	box-sizing: border-box;
 }
 
-/*Logo, Menu, and Social section*/
+/*General Styles*/
 
-.logo-menu-social {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	padding: 2rem;
-	z-index: 1;
+body {
+	font-family: 'Montserrat', sans-serif;
 }
 
-.logo-menu-wrapper {
+h2 {
+	font-size: 4rem;
+}
+
+h1 {
+	font-size: 10rem;
+	font-family: League-Spartan, "Montserrat", sans-serif;
+}
+
+p {
+	font-size: 1.8rem;
+}
+
+/*https://codepen.io/Wking/pen/BdmpVx*/
+.underline--magical {
+	background-image: linear-gradient(red, red);
+	background-repeat: no-repeat;
+	background-size: 100% 0.3em;
+	background-position: 0 80%;
+	transition: 0.25s;
+}
+
+.underline--magical:hover {
+	background-size: 100% 88%;
+	background-position: 0 0;
+}
+
+/*Logo and Menu header*/
+
+header {
+	position: fixed;
+	width: 100%;
+	padding: 2rem;
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -49,6 +86,7 @@
 	height: 4rem;
 	background-color: var(--my-red);
 	border-radius: 50%;
+	box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.50);
 	display: inline-block;
 	cursor: pointer;
 	padding: 20px;
@@ -90,13 +128,14 @@
 
 /*Social Media Icons*/
 
-.social-media-icons {
+/*.social-media-icons {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	width: 7%;
 	height: 80%;
-	/*border: 8px solid red;*/
+	background-color: blue;
 }
 
 @media (max-width: 500px) {
@@ -113,23 +152,64 @@
 
 .social-media-icons a:hover {
 	color: var(--my-red);
-}
+}*/
 
 /*Hi!*/
 
 .Hi {
 	width: 100%;
 	min-height: 100vh;
-}
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-.Hi .bg-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background-image: url("../img/backgrounds/Hi-bg.svg");
 	background-size: cover;
 	background-position: center;
-	z-index: -1; /*make sure image is behind other elements*/
+}
+
+.Hi #say-hi {
+	font-family: League-Spartan, "Montserrat", sans-serif;
+	color: var(--my-red);
+}
+
+@media (max-width: 950px) {
+	.Hi-content {
+		padding: 30vh 15vw;
+	}
+}
+
+@media (max-height: 570px) {
+	#logo {
+		background-image: url("../img/logos/KTr-logo-outline.svg");
+	}
+}
+
+@media (max-width: 500px) {
+	.Hi-content {
+		padding: 30vh 15vw;
+	}
+
+	#logo {
+		background-image: url("../img/logos/KTr-logo-outline.svg");
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h1 {
+		font-size: 6rem;
+		font-family: League-Spartan, "Montserrat", sans-serif;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 330px) {
+	.Hi-content {
+		padding: 35vh 15vw;
+	}
 }
