@@ -35,8 +35,7 @@
 	height: 80px;
 	background-image: url("../img/logos/KTr-logo.svg");
 	background-repeat: no-repeat;
-	background-position: center; 
-	transition: background-image 0.2s 0.1s;
+	background-position: center;
 }
 
 #logo:hover {
