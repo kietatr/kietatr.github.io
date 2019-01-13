@@ -13,6 +13,7 @@
 	src: url("../fonts/LeagueSpartan-Bold.otf");
 }
 
+/*All*/
 * {
 	padding: 0;
 	margin: 0;
@@ -25,18 +26,27 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
-	font-size: 4rem;
-}
-
 h1 {
 	font-size: 10rem;
 	font-family: League-Spartan, "Montserrat", sans-serif;
 }
 
+h2 {
+	font-size: 4rem;
+	font-family: League-Spartan, "Montserrat", sans-serif;
+}
+
+h3 {
+	font-size: 3rem;
+	font-family: League-Spartan, "Montserrat", sans-serif;
+}
+
 p {
 	font-size: 1.8rem;
+	font-family: 'Montserrat', sans-serif;
 }
+
+/*Magical Underline*/
 
 /*https://codepen.io/Wking/pen/BdmpVx*/
 .underline--magical {
@@ -47,9 +57,14 @@ p {
 	transition: 0.25s;
 }
 
-.underline--magical:hover {
+.underline--magical:hover, .underline--magical:focus {
 	background-size: 100% 88%;
 	background-position: 0 0;
+	color: white;
+}
+
+.grey {
+	background-image: linear-gradient(var(--my-darkgrey), var(--my-darkgrey));
 }
 
 /*Logo and Menu header*/
@@ -154,27 +169,57 @@ header {
 	color: var(--my-red);
 }*/
 
-/*Hi!*/
+/*All sections*/
 
-.Hi {
+section {
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	background-image: url("../img/backgrounds/Hi-bg.svg");
-	background-size: cover;
-	background-position: center;
 }
 
-.Hi #say-hi {
+/*Hi!*/
+
+.Hi {
+	background-image: url("../img/backgrounds/Hi-bg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+}
+
+.red-League-Spartan {
 	font-family: League-Spartan, "Montserrat", sans-serif;
 	color: var(--my-red);
 }
 
+/*About*/
+
+.About {
+	/*background-image: url("../img/backgrounds/Hi-bg.svg");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+}
+
+/*Contact*/
+
+.Contact {
+	background-color: black;
+	color: white;
+}
+
+/*Responsive design for different screen sizes*/
+
+.section-content {
+	max-width: 1800px;
+	padding: 30vh 20vw;
+}
+
 @media (max-width: 950px) {
-	.Hi-content {
+	.section-content {
 		padding: 30vh 15vw;
 	}
 }
@@ -186,7 +231,7 @@ header {
 }
 
 @media (max-width: 500px) {
-	.Hi-content {
+	.section-content {
 		padding: 30vh 15vw;
 	}
 
@@ -194,13 +239,17 @@ header {
 		background-image: url("../img/logos/KTr-logo-outline.svg");
 	}
 
+	h1 {
+		font-size: 6rem;
+		font-family: League-Spartan, "Montserrat", sans-serif;
+	}
+
 	h2 {
 		font-size: 2rem;
 	}
 
-	h1 {
-		font-size: 6rem;
-		font-family: League-Spartan, "Montserrat", sans-serif;
+	h3 {
+		font-size: 1.5rem;
 	}
 
 	p {
@@ -209,7 +258,7 @@ header {
 }
 
 @media (max-width: 330px) {
-	.Hi-content {
+	.section-content {
 		padding: 35vh 15vw;
 	}
 }
