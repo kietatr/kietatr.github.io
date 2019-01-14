@@ -7,12 +7,23 @@
 	<link rel="icon" href="assets/img/logos/KTr-icon.png" type="image/png">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- jQuery -->
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"
+	>
+	</script>										
+	<!-- Parallax.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
+	<!-- Logo and Menu Button -->
+
 	<header class="logo-menu-header">
-		<a href="#">
+		<a href="#Hi">
 			<div id="logo"></div>
 		</a>
 		<div class="menu-button" onclick="toggleMenuButton(this)">
@@ -22,8 +33,22 @@
 		</div>
 	</header>
 
-	<section class="Hi">
-		<div class="section-content">
+	<!-- Navigation -->
+
+	<nav>
+		<a href="#Hi" onclick="closeNav()"><h2><span class="underline--magical grey">Hi!</span></h2></a>
+		<a href="#About" onclick="closeNav()"><h2><span class="underline--magical grey">About Me</span></h2></a>
+		<a href="#Hi" onclick="closeNav()"><h2><span class="underline--magical grey">My Works</span></h2></a>
+		<a href="#Contact" onclick="closeNav()"><h2><span class="underline--magical grey">Contact</span></h2></a>
+	</nav>
+
+	<!-- Hi! -->
+
+	<section id="Hi">
+		<!-- <div class="shortbread" data-depth="0.5">
+			<img src="assets/img/shortbread.png">
+		</div> -->
+		<div class="section-content" data-depth="0.2">
 			<h2>
 				<span class="red-League-Spartan">Xin chào!</span> 
 				<span style="font-family: 'Montserrat', sans-serif;">I'm</span>
@@ -43,7 +68,9 @@
 		</div>
 	</section>
 
-	<section class="About">
+	<!-- About Me -->
+
+	<section id="About">
 		<div class="section-content">
 			<h2><span class="underline--magical">Hi! I’m Kiet.</span></h2>
 
@@ -83,7 +110,9 @@
 		</div>
 	</section>
 
-	<section class="Contact">
+	<!-- Contact -->
+
+	<section id="Contact">
 		<div class="section-content">
 			<h2>
 				<span class="underline--magical">
@@ -101,6 +130,7 @@
 	</section>
 
 	<!-- My Javascript files -->
+	
 	<script src="assets/js/app.js"></script>
 </body>
 </html>
