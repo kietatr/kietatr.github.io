@@ -284,18 +284,3 @@ section {
 		padding: 35vh 15vw;
 	}
 }
-
-/*OnePage-Scroll*/
-
-.onepage-pagination {
-	right: 2.5vw;
-}
-
-.onepage-pagination li a::before {
-	background-color: var(--my-darkgrey);
-	border: 2px solid var(--my-darkgrey) !important;
-}
-
-.onepage-pagination li a.active:before{
-	background: none;
-}

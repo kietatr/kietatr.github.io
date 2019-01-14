@@ -41,9 +41,3 @@ $(document).ready(function(){
 // Parallax.js
 var scene = document.querySelector("#Hi");
 var parallaxInstance = new Parallax(scene);
-
-// OnePage-Scroll
-
-$(".main").onepage_scroll({
-	loop: false
-});
