@@ -16,6 +16,9 @@
 	</script>									
 	<!-- Parallax.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<!-- OnePage-Scroll -->
+	<link rel="stylesheet" type="text/css" href="assets/js/lib/onepage-scroll/onepage-scroll.css">
+	<script src="assets/js/lib/onepage-scroll/jquery.onepage-scroll.min.js"></script>
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -38,96 +41,143 @@
 	<nav>
 		<a href="#Hi" onclick="closeNav()"><h2><span class="underline--magical grey">Hi!</span></h2></a>
 		<a href="#About" onclick="closeNav()"><h2><span class="underline--magical grey">About Me</span></h2></a>
-		<a href="#Hi" onclick="closeNav()"><h2><span class="underline--magical grey">My Works</span></h2></a>
+		<a href="#Works" onclick="closeNav()"><h2><span class="underline--magical grey">My Works</span></h2></a>
 		<a href="#Contact" onclick="closeNav()"><h2><span class="underline--magical grey">Contact</span></h2></a>
 	</nav>
 
-	<!-- Hi! -->
+	<div class="main">
 
-	<section id="Hi">
-		<!-- <div class="shortbread" data-depth="0.5">
-			<img src="assets/img/shortbread.png">
-		</div> -->
-		<div class="section-content" data-depth="0.2">
-			<h2>
-				<span class="red-League-Spartan">Xin chào!</span> 
-				<span style="font-family: 'Montserrat', sans-serif;">I'm</span>
-			</h2>
+		<!-- Hi! -->
 
-			<h1>
-				<span class="underline--magical">Kiet Tran</span>
-			</h1>
+		<section id="Hi">
+			<!-- <div class="shortbread" data-depth="0.5">
+				<img src="assets/img/shortbread.png">
+			</div> -->
+			<div class="section-content" data-depth="0.2">
+				<h2>
+					<span class="red-League-Spartan">Xin chào!</span> 
+					<span style="font-family: 'Montserrat', sans-serif;">I'm</span>
+				</h2>
 
-			<!-- <p>
-				I’m a junior at Macalester College (St. Paul, MN),<br>
-				where I major in
-				<span class="underline--magical" style="background-image: linear-gradient(#BFBFBF, #BFBFBF);">
-					Computer Science.
-				</span>
-			</p> -->
-		</div>
-	</section>
+				<h1>
+					<span class="underline--magical">Kiet Tran</span>
+				</h1>
 
-	<!-- About Me -->
+				<!-- <p>
+					I’m a junior at Macalester College (St. Paul, MN),<br>
+					where I major in
+					<span class="underline--magical" style="background-image: linear-gradient(#BFBFBF, #BFBFBF);">
+						Computer Science.
+					</span>
+				</p> -->
+			</div>
+		</section>
 
-	<section id="About">
-		<div class="section-content">
-			<h2><span class="underline--magical">Hi! I’m Kiet.</span></h2>
+		<!-- About Me -->
 
-			<p class="red-League-Spartan">
-				/pronounced like “Keat” in “John Keats”/
-			</p>
-			<br>
+		<section id="About">
+			<div class="section-content">
+				<h2><span class="underline--magical">Hi! I’m Kiet.</span></h2>
 
-			<p>
-				I’m a junior at Macalester College (St. Paul, MN),<br>
-				where I major in
-				<span class="underline--magical grey">
-					Computer Science.
-				</span>
-				I’m interested in
-				<span class="underline--magical grey">
-					graphic design
-				</span>
-				and 
-				<span class="underline--magical grey">
-					software / web development
-				</span>
-				, and I’m currently looking for an internship in those fields.
-			</p>
-			<br>
+				<p class="red-League-Spartan">
+					/pronounced like “Keat” in “John Keats”/
+				</p>
+				<br>
 
-			<h3>
-				<span style="color: var(--my-red);">
-					tl;dr:
-				</span> 
-				I 
-				<span style="color: var(--my-red);">
-					<i class="fas fa-heart"></i>
-				</span> 
-				art & coding
-			</h3>
-		</div>
-	</section>
+				<p>
+					I’m a junior at Macalester College (St. Paul, MN),<br>
+					where I major in
+					<span class="underline--magical grey">
+						Computer Science.
+					</span>
+					I’m interested in
+					<span class="underline--magical grey">
+						graphic design
+					</span>
+					and 
+					<span class="underline--magical grey">
+						software / web development
+					</span>
+					, and I’m currently looking for an internship in those fields.
+				</p>
+				<br>
 
-	<!-- Contact -->
+				<h3>
+					<span style="color: var(--my-red);">
+						tl;dr:
+					</span> 
+					I 
+					<span style="color: var(--my-red);">
+						<i class="fas fa-heart"></i>
+					</span> 
+					art & coding
+				</h3>
+			</div>
+		</section>
 
-	<section id="Contact">
-		<div class="section-content">
-			<h2>
-				<span class="underline--magical">
-					Contact
-				</span>
-			</h2>
-			<p>
-				I’m a junior at Macalester College (St. Paul, MN),<br>
-				where I major in
-				<span class="underline--magical" style="background-image: linear-gradient(#BFBFBF, #BFBFBF);">
-					Computer Science.
-				</span>
-			</p>
-		</div>
-	</section>
+		<!-- Works -->
+
+		<section id="Works">
+			<div class="section-content">
+				<h2><span class="underline--magical">Hi! I’m Kiet.</span></h2>
+
+				<p class="red-League-Spartan">
+					/pronounced like “Keat” in “John Keats”/
+				</p>
+				<br>
+
+				<p>
+					I’m a junior at Macalester College (St. Paul, MN),<br>
+					where I major in
+					<span class="underline--magical grey">
+						Computer Science.
+					</span>
+					I’m interested in
+					<span class="underline--magical grey">
+						graphic design
+					</span>
+					and 
+					<span class="underline--magical grey">
+						software / web development
+					</span>
+					, and I’m currently looking for an internship in those fields.
+				</p>
+				<br>
+
+				<h3>
+					<span style="color: var(--my-red);">
+						tl;dr:
+					</span> 
+					I 
+					<span style="color: var(--my-red);">
+						<i class="fas fa-heart"></i>
+					</span> 
+					art & coding
+				</h3>
+			</div>
+		</section>
+
+		<!-- Contact -->
+
+		<section id="Contact">
+			<div class="section-content">
+				<h2>
+					<span class="underline--magical">
+						Contact
+					</span>
+				</h2>
+				<p>
+					I’m a junior at Macalester College (St. Paul, MN),<br>
+					where I major in
+					<span class="underline--magical" style="background-image: linear-gradient(#BFBFBF, #BFBFBF);">
+						Computer Science.
+					</span>
+				</p>
+			</div>
+		</section>
+
+	</div>
+	<!-- End of .main -->
 
 	<!-- My Javascript -->
 
