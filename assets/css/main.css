@@ -224,6 +224,24 @@ section {
 	z-index: -3;
 }
 
+@media (orientation: portrait) {
+	#Hi-bg-top {
+		background-image: url("../img/backgrounds/Hi/Hi-bg-vert-top.svg");
+	}
+
+	#Hi-bg-1 {
+		background-image: url("../img/backgrounds/Hi/Hi-bg-vert-1.svg");
+	}
+
+	#Hi-bg-2 {
+		background-image: url("../img/backgrounds/Hi/Hi-bg-vert-2.svg");
+	}
+
+	#Hi-bg-3 {
+		background-image: url("../img/backgrounds/Hi/Hi-bg-vert-3.svg");
+	}
+}
+
 /*About*/
 
 #About {
