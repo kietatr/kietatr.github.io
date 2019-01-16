@@ -52,8 +52,8 @@ p {
 }
 
 /*Magical Underline*/
-
 /*https://codepen.io/Wking/pen/BdmpVx*/
+
 .underline--magical {
 	background-image: linear-gradient(to bottom right, red, orange);
 	background-repeat: no-repeat;
@@ -69,10 +69,11 @@ p {
 }
 
 .grey {
-	background-image: -webkit-gradient(linear, left top, right bottom, from(var(--my-darkgrey)), to(rgba(0,0,0,0)));
-	background-image: -webkit-linear-gradient(top left, var(--my-darkgrey), rgba(0,0,0,0));
-	background-image: -o-linear-gradient(top left, var(--my-darkgrey), rgba(0,0,0,0));
-	background-image: linear-gradient(to bottom right, var(--my-darkgrey), rgba(0,0,0,0));
+	background-image: linear-gradient(to bottom right, var(--my-darkgrey), black);
+}
+
+nav a .grey {
+	background-image: linear-gradient(to bottom right, var(--my-darkgrey), #ebebeb);
 }
 
 /*Logo and Menu*/
@@ -95,7 +96,6 @@ p {
 }
 
 #logo:hover {
-	/*background-image: url("../img/logos/logo-square-outline-shadow.svg");*/
 	transform: rotate(-25deg);
 }
 
