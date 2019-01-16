@@ -55,7 +55,7 @@ p {
 
 /*https://codepen.io/Wking/pen/BdmpVx*/
 .underline--magical {
-	background-image: linear-gradient(red, red);
+	background-image: linear-gradient(to bottom right, red, orange);
 	background-repeat: no-repeat;
 	background-size: 100% 0.3em;
 	background-position: 0 80%;
@@ -69,7 +69,7 @@ p {
 }
 
 .grey {
-	background-image: linear-gradient(#BFBFBF, #BFBFBF);
+	background-image: linear-gradient(to bottom right, var(--my-darkgrey), rgba(0,0,0,0));
 }
 
 /*Logo and Menu*/
@@ -87,10 +87,13 @@ p {
 	background-image: url("../img/logos/logo-square-outline.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+
+	transition: transform 0.5s;
 }
 
 #logo:hover {
-	background-image: url("../img/logos/logo-square-outline-shadow.svg");
+	/*background-image: url("../img/logos/logo-square-outline-shadow.svg");*/
+	transform: rotate(-25deg);
 }
 
 /*Menu button*/
@@ -103,9 +106,8 @@ p {
 
 	width: 4rem;
 	height: 4rem;
-	background-color: var(--my-red);
+	background-image: linear-gradient(to bottom right, red, orange);
 	border-radius: 50%;
-	box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.50);
 	display: inline-block;
 	cursor: pointer;
 	padding: 20px;
@@ -148,7 +150,8 @@ p {
 /*Navigation*/
 
 nav {
-	background-color: var(--my-red);
+	background-image: linear-gradient(to bottom right, red, orange);
+
 	position: fixed;
 	top: 0; left: 0;
 	width: 100vw;
@@ -172,7 +175,7 @@ nav {
 nav a {
 	text-decoration: none;
 	color: black;
-	margin-bottom: 15px;
+	margin-bottom: 2rem;
 }
 
 /*All sections*/
@@ -183,6 +186,9 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	background-color: black;
+	color: white;
 
 	background-size: cover;
 	background-position: center;
@@ -205,19 +211,19 @@ section {
 #Hi-bg-top {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-top.svg");
 	z-index: 1;
-	animation: spin 15s linear infinite;
+	/*animation: spin 15s linear infinite;*/
 }
 
 #Hi-bg-1 {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-1.svg");
 	z-index: -1;
-	animation: spin 20s linear infinite;
+	/*animation: spin 20s linear infinite;*/
 }
 
 #Hi-bg-2 {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-2.svg");
 	z-index: -2;
-	animation: spin 25s linear infinite;
+	/*animation: spin 25s linear infinite;*/
 }
 
 #Hi-bg-3 {
