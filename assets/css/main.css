@@ -20,30 +20,30 @@
 	box-sizing: border-box;
 }
 
-/*General Styles*/
+/*General Font Styles*/
 
 body {
-	font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-	font-size: 10rem;
-	font-family: League-Spartan, "Montserrat", sans-serif;
-}
-
-h2 {
-	font-size: 4rem;
-	font-family: League-Spartan, "Montserrat", sans-serif;
-}
-
-h3 {
-	font-size: 3rem;
 	font-family: League-Spartan, "Montserrat", sans-serif;
 }
 
 p {
-	font-size: 1.8rem;
 	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1.2rem;
 }
 
 .red-League-Spartan {
@@ -205,21 +205,30 @@ section {
 #Hi-bg-top {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-top.svg");
 	z-index: 1;
+	animation: spin 15s linear infinite;
 }
 
 #Hi-bg-1 {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-1.svg");
 	z-index: -1;
+	animation: spin 20s linear infinite;
 }
 
 #Hi-bg-2 {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-2.svg");
 	z-index: -2;
+	animation: spin 25s linear infinite;
 }
 
 #Hi-bg-3 {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-3.svg");
 	z-index: -3;
+	animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
 
 @media (orientation: portrait) {
@@ -256,50 +265,45 @@ section {
 /*Responsive design for different screen sizes*/
 
 .section-content {
-	max-width: 1800px;
-	padding: 30vh 20vw;
+	padding: 30vh 15vw;
 }
 
-@media (max-width: 950px) {
-	.section-content {
-		padding: 30vh 15vw;
-	}
-}
+/*Laptop, iPad*/
 
-@media (max-width: 500px), (orientation: landscape) {
+@media (min-width: 1024px), (min-height: 1024px) {
 	h1 {
-		font-size: 6rem;
-		font-family: League-Spartan, "Montserrat", sans-serif;
+		font-size: 9rem;
 	}
 
 	h2 {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 
 	h3 {
+		font-size: 2.5rem;
+	}
+
+	p {
 		font-size: 1.5rem;
 	}
-
-	p {
-		font-size: 1.2rem;
-	}
 }
 
-@media screen and (max-height: 500px) and (orientation: landscape) {
+/*4K screen*/
+
+@media (min-width: 2000px) {
 	h1 {
-		font-size: 5rem;
-		font-family: League-Spartan, "Montserrat", sans-serif;
+		font-size: 15rem;
 	}
 
 	h2 {
-		font-size: 2rem;
+		font-size: 6rem;
 	}
 
 	h3 {
-		font-size: 1.4rem;
+		font-size: 5rem;
 	}
 
 	p {
-		font-size: 1.1rem;
+		font-size: 3rem;
 	}
 }
