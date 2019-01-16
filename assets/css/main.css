@@ -73,7 +73,7 @@ p {
 }
 
 nav a .grey {
-	background-image: linear-gradient(to bottom right, var(--my-darkgrey), #ebebeb);
+	background-image: linear-gradient(to bottom right, #BFBFBF, #B0B0B0);
 }
 
 /*Logo and Menu*/
