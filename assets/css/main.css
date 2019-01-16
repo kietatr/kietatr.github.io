@@ -72,23 +72,16 @@ p {
 	background-image: linear-gradient(#BFBFBF, #BFBFBF);
 }
 
-/*Logo and Menu header*/
-
-header {
-	position: fixed;
-	width: 100%;
-	padding: 2rem;
-	z-index: 99;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
+/*Logo and Menu*/
 
 /*Logo*/
 
 #logo {
+	position: fixed;
+	top: 2rem;
+	left: 2rem;
+	z-index: 99;
+
 	width: 100px;
 	height: 80px;
 	background-image: url("../img/logos/logo-square-outline.svg");
@@ -103,6 +96,11 @@ header {
 /*Menu button*/
 
 .menu-button {
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	z-index: 99;
+
 	width: 4rem;
 	height: 4rem;
 	background-color: var(--my-red);
