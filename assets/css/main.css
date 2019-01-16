@@ -200,7 +200,7 @@ section {
 	min-width: 100vw;
 	min-height: 100vh;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 }
 
@@ -303,11 +303,5 @@ section {
 
 	p {
 		font-size: 1.1rem;
-	}
-}
-
-@media (max-width: 330px) {
-	.section-content {
-		padding: 35vh 15vw;
 	}
 }
