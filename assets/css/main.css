@@ -183,15 +183,17 @@ nav a {
 
 /*All sections*/
 
+body {
+	background-color: black;
+	color: white;
+}
+
 section {
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	background-color: black;
-	color: white;
 
 	background-size: cover;
 	background-position: center;
@@ -200,7 +202,7 @@ section {
 /*Hi!*/
 
 #Hi {
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .Hi-bg {
@@ -223,12 +225,6 @@ section {
 	/*animation: spin 20s linear infinite;*/
 }
 
-#Hi-bg-2 {
-	background-image: url("../img/backgrounds/Hi/Hi-bg-2.svg");
-	z-index: -2;
-	/*animation: spin 25s linear infinite;*/
-}
-
 #Hi-bg-3 {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-3.svg");
 	z-index: -3;
@@ -249,10 +245,6 @@ section {
 		background-image: url("../img/backgrounds/Hi/Hi-bg-vert-1.svg");
 	}
 
-	#Hi-bg-2 {
-		background-image: url("../img/backgrounds/Hi/Hi-bg-vert-2.svg");
-	}
-
 	#Hi-bg-3 {
 		background-image: url("../img/backgrounds/Hi/Hi-bg-vert-3.svg");
 	}
@@ -261,14 +253,123 @@ section {
 /*About*/
 
 #About {
-	/*background-image: url("../img/backgrounds/Hi-bg.svg");*/
+	overflow: hidden;
+}
+
+#About .section-content {
+	z-index: 2;
+}
+
+.About-bg {
+	position: absolute;
+	width: 100%;
+	min-height: 100vh;
+	z-index: 1;
+}
+
+.About-bg img {
+	position: absolute;
+	height: auto;
+}
+
+#About .line-1 img {
+	width: 17%;
+	height: auto;
+
+	position: absolute;
+	left: 27vw;
+	top: 0;
+
+	animation: slantdrop 3s ease-out infinite;
+}
+
+#About .line-2 img {
+	width: 35%;
+	right: 0vw;
+	top: 9vh;
+
+	animation: slantdrop 3s ease-out 0.5s infinite;
+}
+
+#About .line-3 img {
+	width: 35%;
+	right: 12vw;
+	top: 25vh;
+
+	animation: slantdrop 3s ease-out 1s infinite;
+}
+
+#About .line-4 img {
+	width: 45%;
+	left: 0vw;
+	bottom: 0vh;
+
+	animation: slantdrop 3s linear 1.5s infinite;
+}
+
+#About .square img {
+	width: 80%;
+
+	position: static;
+	display: block;
+	margin: 0 auto;
+	padding: 50vh 0;
+
+	animation: rot3D 20s linear infinite;  
+}
+
+@media (min-width: 1024px), (min-height: 1024px), (orientation: landscape) {
+	#About .line-1 img {
+		width: 10%;
+	}
+
+	#About .line-2 img {
+		width: 15%;
+		right: 8vw;
+		top: 6vh;
+	}
+
+	#About .line-3 img {
+		width: 15%;
+		right: 14vw;
+		top: 28vh;
+	}
+
+	#About .line-4 img {
+		width: 25%;
+		left: 5vw;
+		bottom: 5vh;
+	}
+
+	#About .square img {
+		width: 40%;
+	}
+}
+
+@keyframes slantdrop {
+	0% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-50px, 50px);
+		opacity: 0.2;
+	}
+}
+
+@keyframes rot3D {
+	0% {
+		transform: rotate3d(0,0,0,0deg);
+	}
+	100% {
+		transform: rotate3d(0,1,1,360deg);
+	}
 }
 
 /*Contact*/
 
 #Contact {
-	background-color: black;
-	color: white;
+	
 }
 
 /*Responsive design for different screen sizes*/

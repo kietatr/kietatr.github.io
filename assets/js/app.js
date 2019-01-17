@@ -39,5 +39,5 @@ $(document).ready(function(){
 });
 
 // Parallax.js
-var scene = document.querySelector("#Hi");
-var parallaxInstance = new Parallax(scene);
+var Hi = document.querySelector("#Hi");
+var parallaxHi = new Parallax(Hi);
