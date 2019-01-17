@@ -195,6 +195,7 @@ section {
 	align-items: center;
 	justify-content: center;
 
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -253,7 +254,14 @@ section {
 /*About*/
 
 #About {
-	overflow: hidden;
+	background-image: url("../img/backgrounds/About/circles.svg");
+	background-size: contain;
+}
+
+@media (orientation: portrait) {
+	#About {
+		background-image: url("../img/backgrounds/About/circles-vert.svg");
+	}
 }
 
 #About .section-content {
@@ -308,7 +316,7 @@ section {
 }
 
 #About .square img {
-	width: 80%;
+	width: 90%;
 
 	position: static;
 	display: block;
@@ -317,7 +325,7 @@ section {
 
 	transform-style: preserve-3d;
 
-	animation: rot-three-d 20s linear infinite;  
+	animation: bounce 4s ease-in-out infinite;  
 }
 
 @media (min-width: 1024px), (min-height: 1024px), (orientation: landscape) {
@@ -350,11 +358,11 @@ section {
 
 @keyframes slantdrop {
 	0% {
-		transform: translate(0px, 0px);
+		transform: translate(30px, -30px);
 		opacity: 1;
 	}
 	100% {
-		transform: translate(-50px, 50px);
+		transform: translate(-150px, 150px);
 		opacity: 0.2;
 	}
 }
@@ -370,7 +378,13 @@ section {
 	}
 }
 
-/*Contact*/
+@keyframes bounce {
+	0% { transform: translate(0px, 0px); }
+	50% { transform: translate(0px, 30px); }
+	100% { transform: translate(0px, 0px); }
+}
+
+/*Contact
 
 #Contact {
 	
