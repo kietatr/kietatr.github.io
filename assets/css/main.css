@@ -216,7 +216,7 @@ section {
 #Hi-bg-top {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-top.svg");
 	z-index: 1;
-	/*animation: spin 15s linear infinite;*/
+	animation: slantdrop 5s ease-out infinite;
 }
 
 #Hi-bg-1 {
@@ -278,23 +278,23 @@ section {
 
 	position: absolute;
 	left: 27vw;
-	top: 0;
+	top: -15vh;
 
 	animation: slantdrop 3s ease-out infinite;
 }
 
 #About .line-2 img {
 	width: 35%;
-	right: 0vw;
-	top: 9vh;
+	right: -5vw;
+	top: -10vh;
 
 	animation: slantdrop 3s ease-out 0.5s infinite;
 }
 
 #About .line-3 img {
 	width: 35%;
-	right: 12vw;
-	top: 25vh;
+	right: 7vw;
+	top: 10vh;
 
 	animation: slantdrop 3s ease-out 1s infinite;
 }
