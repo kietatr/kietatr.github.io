@@ -204,7 +204,7 @@ nav .square img {
 	margin: 0 auto;
 	padding: 50vh 0;
 
-	transform-style: preserve-3d;
+	/*transform-style: preserve-3d;*/
 
 	animation: rot-3d 10s linear infinite;  
 }
