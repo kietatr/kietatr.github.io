@@ -43,12 +43,12 @@ h3 {
 }
 
 p {
-	font-size: 1.2rem;
+	font-size: 1.0rem;
 }
 
 .red-League-Spartan {
 	font-family: League-Spartan, "Montserrat", sans-serif;
-	color: var(--my-red);
+	color: red;
 }
 
 /*Magical Underline*/
@@ -236,6 +236,7 @@ body {
 section {
 	width: 100%;
 	min-height: 100vh;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -258,7 +259,7 @@ section {
 #Hi-bg-top {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-top.svg");
 	z-index: 1;
-	animation: slantdrop 5s ease-out infinite;
+	animation: slantdrop 4.5s ease-out infinite;
 }
 
 #Hi-bg-1 {
@@ -414,10 +415,48 @@ section {
 	100% { transform: translate(0px, 0px); }
 }
 
-/*Contact
+/*Contact*/
 
-#Contact {
-	
+#Contact .grid {
+	border: 1px solid white;
+	width: 70vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#Contact .grid .social-links {
+	flex: 1 1 50%;
+
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 70px;
+}
+
+#Contact .grid .logo {
+	background-image: linear-gradient(to bottom right, red, orange);
+	flex: 1 1 50%;
+}
+
+#Contact .grid .social-links p {
+	font-family: League-Spartan, "Montserrat", sans-serif;
+	letter-spacing: 1.5;
+}
+
+#Contact .grid .social-links a {
+	color: white;
+	text-decoration: none;
+	cursor: url("../img/backgrounds/Nav/square-white.png"), click;
+}
+
+#Contact .grid .social-links a:hover, #Contact .grid .social-links a:active {
+	/*Gradient Text*/
+	background: linear-gradient(to bottom right, red, orange);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /*Font sizes for different screen sizes*/
