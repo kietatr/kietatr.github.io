@@ -30,20 +30,65 @@ p {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/*Font sizes for different screen sizes*/
+
+/*Mobile phone*/
+
 h1 {
 	font-size: 5rem;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 p {
-	font-size: 1.0rem;
+	font-size: 1.3rem;
+	line-height: 1.75;
+}
+
+/*Laptop, iPad*/
+
+@media (min-width: 1024px), (min-height: 1024px) {
+	h1 {
+		font-size: 9rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+	}
+
+	p {
+		font-size: 1.6rem;
+	}
+}
+
+/*4K screen*/
+
+@media (min-width: 2000px) {
+	h1 {
+		font-size: 15rem;
+	}
+
+	h2 {
+		font-size: 6rem;
+	}
+
+	h3 {
+		font-size: 5rem;
+	}
+
+	p {
+		font-size: 3rem;
+	}
 }
 
 .red-League-Spartan {
@@ -246,6 +291,10 @@ section {
 	background-position: center;
 }
 
+.section-content {
+	padding: 25vh 15vw;
+}
+
 /*Hi!*/
 
 .Hi-bg {
@@ -265,7 +314,6 @@ section {
 #Hi-bg-1 {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-1.svg");
 	z-index: -1;
-	/*animation: spin 20s linear infinite;*/
 }
 
 #Hi-bg-3 {
@@ -426,14 +474,14 @@ section {
 	align-items: center;
 }
 
-#Contact .grid .social-links {
+#Contact .grid .contact-info {
 	flex: 1 1 50%;
 
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
 	justify-content: center;
-	padding: 50px 70px;
+	padding: 50px;
 }
 
 #Contact .grid .logo {
@@ -441,66 +489,32 @@ section {
 	flex: 1 1 50%;
 }
 
-#Contact .grid .social-links p {
+.contact-info p {
 	font-family: League-Spartan, "Montserrat", sans-serif;
-	letter-spacing: 1.5;
 }
 
-#Contact .grid .social-links a {
+.contact-info a {
 	color: white;
 	text-decoration: none;
-	cursor: url("../img/backgrounds/Nav/square-white.png"), click;
 }
 
-#Contact .grid .social-links a:hover, #Contact .grid .social-links a:active {
-	/*Gradient Text*/
+.contact-info a:hover i:before, 
+.contact-info a:hover p {
 	background: linear-gradient(to bottom right, red, orange);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-/*Font sizes for different screen sizes*/
-
-.section-content {
-	padding: 30vh 15vw;
+.social-icons a:nth-child(2) {
+	margin: 0 20px;
 }
 
-/*Laptop, iPad*/
+.social-icons a {
+	font-size: 2.2rem;
+}
 
 @media (min-width: 1024px), (min-height: 1024px) {
-	h1 {
-		font-size: 9rem;
-	}
-
-	h2 {
-		font-size: 3rem;
-	}
-
-	h3 {
-		font-size: 2.5rem;
-	}
-
-	p {
-		font-size: 1.5rem;
-	}
-}
-
-/*4K screen*/
-
-@media (min-width: 2000px) {
-	h1 {
-		font-size: 15rem;
-	}
-
-	h2 {
-		font-size: 6rem;
-	}
-
-	h3 {
-		font-size: 5rem;
-	}
-
-	p {
-		font-size: 3rem;
+	.social-icons a {
+		font-size: 2.7rem;
 	}
 }
