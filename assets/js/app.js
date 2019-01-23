@@ -41,3 +41,6 @@ $(document).ready(function(){
 // Parallax.js
 var Hi = document.querySelector("#Hi");
 var parallaxHi = new Parallax(Hi);
+
+// Rellax.js
+var rellax = new Rellax('.rellax');
