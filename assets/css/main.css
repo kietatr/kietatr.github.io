@@ -586,11 +586,11 @@ section {
 }
 
 #proj-1 {
-	background: linear-gradient(var(--normal-color-red), var(--normal-color-orange)), url("../img/works/comp-graphics.jpg");
+	background-image: linear-gradient(var(--normal-color-red), var(--normal-color-orange)), url("../img/works/comp-graphics.jpg");
 }
 
 #proj-1:hover {
-	background: linear-gradient(var(--hover-color-red), var(--hover-color-orange)), url("../img/works/comp-graphics.jpg");
+	background-image: linear-gradient(var(--hover-color-red), var(--hover-color-orange)), url("../img/works/comp-graphics.jpg");
 }
 
 #proj-2 {
