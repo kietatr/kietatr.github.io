@@ -17,6 +17,7 @@
 
 body {
 	font-family: League-Spartan, "Montserrat", sans-serif;
+	/*text-align: center;*/
 }
 
 p {
@@ -28,7 +29,7 @@ p {
 /*Mobile phone*/
 
 h1 {
-	font-size: 5rem;
+	font-size: 6rem;
 }
 
 h2 {
@@ -281,10 +282,12 @@ section {
 }
 
 .section-content {
-	padding: 25vh 15vw;
+	padding: 12vh 15vw;
 }
 
-/*Hi!*/
+/*///////////////////////////////////*/
+/*HI!*/
+/*///////////////////////////////////*/
 
 .Hi-bg {
 	min-width: 100vw;
@@ -330,7 +333,13 @@ section {
 	}
 }
 
-/*About*/
+#Hi .section-content {
+	margin: 20vh auto;
+}
+
+/*///////////////////////////////////*/
+/*ABOUT*/
+/*///////////////////////////////////*/
 
 #About {
 	background-image: url("../img/backgrounds/About/circles.svg");
@@ -448,11 +457,104 @@ section {
 	100% { transform: translate(0px, 0px); }
 }
 
-/*Contact*/
+/*///////////////////////////////////*/
+/*WORKS*/
+/*///////////////////////////////////*/
+
+/*Works -- General*/
+
+#Works .section-content {
+	/*Because the planet from About section has z-index: 1*/
+	z-index: 2;
+}
+
+#Works {
+	text-align: center;
+}
+
+.projects {
+	width: 80vw;
+}
+
+#Works .proj {
+	padding: 30vh 10vw;
+	margin: 10vh 0;
+
+	border-radius: 40px;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	/*Get rid of default <a> styling*/
+	display: block;
+	text-decoration: none;
+	color: white;
+
+	position: relative;
+
+	/*Hide the View Project tag*/
+	overflow: hidden;
+
+	transition: all 0.5s;
+}
+
+.proj:hover, .proj:focus {
+	transform: scale(1.1);
+	z-index: 3;
+}
+
+/*Works -- Project Images*/
+
+#proj-1 {
+	background-image: url("../img/gradient/gradient-overlay.svg"), url("../img/works/comp-graphics.jpg");
+}
+
+#proj-2 {
+	background-image: url("../img/gradient/gradient-overlay-r.svg"), url("../img/works/flavors-of-home.jpg");
+}
+
+#proj-3 {
+	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/LHP-branding.jpg");
+}
+
+/*Works -- "View Project" tag*/
+
+.view-project {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+
+.view-project p {
+	position: relative; 
+	left: -50%;
+
+	color: white;
+	background: linear-gradient(to bottom right, red, orange);
+	padding: 10px 30px;
+	padding-bottom: 30px;
+
+	transform: translate(0px, 100vh);
+	transition: all 0.7s;
+}
+
+.proj:hover .view-project p, .proj:focus .view-project p {
+	transform: translate(0px, 0px);
+}
+
+/*///////////////////////////////////*/
+/*CONTACT*/
+/*///////////////////////////////////*/
+
+#Contact h2 {
+	text-align: center;
+}
 
 #Contact .grid {
+	border-radius: 40px;
 	border: 1px solid white;
-	border-radius: 70px;
 	width: 70vw;
 	display: flex;
 	flex-wrap: wrap;
@@ -471,8 +573,8 @@ section {
 }
 
 #Contact .grid .logo {
+	border-radius: 40px;
 	background-image: linear-gradient(to bottom right, red, orange);
-	border-radius: 70px;
 	flex: 1 1 50%;
 }
 
@@ -504,107 +606,4 @@ section {
 	.social-icons a {
 		font-size: 2.7rem;
 	}
-}
-
-/*Works*/
-
-/*Works -- General*/
-
-#Works .section-content {
-	/*Because the planet from About section has z-index: 1*/
-	z-index: 2;
-}
-
-#Works {
-	text-align: center;
-}
-
-.projects {
-	width: 80vw;
-}
-
-#Works .proj {
-	padding: 30vh 10vw;
-	margin: 10vh 0;
-
-	border-radius: 70px;
-
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	/*Get rid of default <a> styling*/
-	display: block;
-	text-decoration: none;
-	color: white;
-
-	position: relative;
-
-	/*Hide the View Project tag*/
-	overflow: hidden;
-
-	transition: all 0.5s;
-}
-
-.proj:hover, .proj:focus {
-	transform: scale(1.1);
-	z-index: 3;
-}
-
-/*"View Project" tag*/
-
-.view-project {
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-}
-
-.view-project p {
-	position: relative; 
-	left: -50%;
-
-	color: white;
-	background: linear-gradient(to bottom right, red, orange);
-	padding: 10px 30px;
-	padding-bottom: 30px;
-
-	transform: translate(0px, 100vh);
-	transition: all 0.7s;
-}
-
-.proj:hover .view-project p, .proj:focus .view-project p {
-	transform: translate(0px, 0px);
-}
-
-:root {
-	--normal-color-red: rgba(0, 0, 0, 0.6);
-	--normal-color-orange: rgba(255, 165, 0, 0.6);
-
-	--hover-color-red: rgba(0, 0, 0, 0.4);
-	--hover-color-orange: rgba(255, 165, 0, 0.4);
-}
-
-#proj-1 {
-	background-image: linear-gradient(var(--normal-color-red), var(--normal-color-orange)), url("../img/works/comp-graphics.jpg");
-}
-
-#proj-1:hover {
-	background-image: linear-gradient(var(--hover-color-red), var(--hover-color-orange)), url("../img/works/comp-graphics.jpg");
-}
-
-#proj-2 {
-	background-image: linear-gradient(var(--normal-color-red), var(--normal-color-orange)), url("../img/works/LHP-branding.jpg");
-}
-
-#proj-2:hover {
-	background-image: linear-gradient(var(--hover-color-red), var(--hover-color-orange)), url("../img/works/LHP-branding.jpg");
-}
-
-#proj-3 {
-	background-image: linear-gradient(var(--normal-color-red), var(--normal-color-orange)), url("../img/works/flavors-of-home.jpg");
-}
-
-#proj-3:hover {
-	background-image: linear-gradient(var(--hover-color-red), var(--hover-color-orange)), url("../img/works/flavors-of-home.jpg");
 }
