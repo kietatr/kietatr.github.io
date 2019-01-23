@@ -452,6 +452,7 @@ section {
 
 #Contact .grid {
 	border: 1px solid white;
+	border-radius: 70px;
 	width: 70vw;
 	display: flex;
 	flex-wrap: wrap;
@@ -471,6 +472,7 @@ section {
 
 #Contact .grid .logo {
 	background-image: linear-gradient(to bottom right, red, orange);
+	border-radius: 70px;
 	flex: 1 1 50%;
 }
 
@@ -509,6 +511,7 @@ section {
 /*Works -- General*/
 
 #Works .section-content {
+	/*Because the planet from About section has z-index: 1*/
 	z-index: 2;
 }
 
@@ -583,11 +586,11 @@ section {
 }
 
 #proj-1 {
-	background-image: linear-gradient(var(--normal-color-red), var(--normal-color-orange)), url("../img/works/comp-graphics.jpg");
+	background: linear-gradient(var(--normal-color-red), var(--normal-color-orange)), url("../img/works/comp-graphics.jpg");
 }
 
 #proj-1:hover {
-	background-image: linear-gradient(var(--hover-color-red), var(--hover-color-orange)), url("../img/works/comp-graphics.jpg");
+	background: linear-gradient(var(--hover-color-red), var(--hover-color-orange)), url("../img/works/comp-graphics.jpg");
 }
 
 #proj-2 {
