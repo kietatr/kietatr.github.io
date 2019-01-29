@@ -116,7 +116,7 @@ nav a .grey {
 .section-content * {
 	opacity: 0;
 	transform: translate(0px, 50px);
-	transition: all 0.4s ease-in-out;
+	transition: all 0.7s ease-in-out;
 }
 
 .section-content .active {
@@ -551,7 +551,7 @@ section {
 	padding-bottom: 20px;
 
 	transform: translate(0px, 100vh);
-	transition: all 0.7s;
+	transition: transform 0.7s;
 }
 
 .proj:hover .view-project p, 
