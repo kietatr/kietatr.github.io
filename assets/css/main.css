@@ -42,7 +42,7 @@ h3 {
 
 p {
 	font-size: 1.3rem;
-	line-height: 1.75;
+	line-height: 1.4;
 }
 
 /*Laptop, iPad*/
@@ -111,6 +111,19 @@ nav a .grey {
 	background-image: linear-gradient(to bottom right, #BFBFBF, #B0B0B0);
 }
 
+/*Fade in/out when scrolling*/
+
+.section-content * {
+	opacity: 0;
+	transform: translate(0px, 50px);
+	transition: all 0.4s ease-in-out;
+}
+
+.section-content .active {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
 /*Logo and Menu*/
 
 /*Logo*/
@@ -123,7 +136,7 @@ nav a .grey {
 
 	width: 100px;
 	height: 80px;
-	background-image: url("../img/logos/logo-square-outline.svg");
+	background-image: url("../img/logos/logo-outline.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 
@@ -215,7 +228,7 @@ nav a {
 	text-decoration: none;
 	color: black;
 	margin-bottom: 2rem;
-	z-index: 2;
+	z-index: 3;
 }
 
 .nav-bg {
@@ -238,6 +251,7 @@ nav .square img {
 	display: block;
 	margin: 0 auto;
 	padding: 50vh 0;
+	z-index: 2;
 
 	transform-style: preserve-3d;
 
@@ -533,14 +547,15 @@ section {
 
 	color: white;
 	background: linear-gradient(to bottom right, red, orange);
-	padding: 10px 30px;
-	padding-bottom: 30px;
+	padding: 10px 25px;
+	padding-bottom: 20px;
 
 	transform: translate(0px, 100vh);
 	transition: all 0.7s;
 }
 
-.proj:hover .view-project p, .proj:focus .view-project p {
+.proj:hover .view-project p, 
+.proj:focus .view-project p {
 	transform: translate(0px, 0px);
 }
 

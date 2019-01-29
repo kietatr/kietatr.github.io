@@ -42,5 +42,46 @@ $(document).ready(function(){
 var Hi = document.querySelector("#Hi");
 var parallaxHi = new Parallax(Hi);
 
-// Rellax.js
-var rellax = new Rellax('.rellax');
+// Fade in/out when scrolling
+// https://www.kirupa.com/animations/creating_scroll_activated_animations.htm
+
+var isScrolling = false;
+
+window.addEventListener("scroll", throttleScroll, false);
+
+function throttleScroll(e) {
+  if (isScrolling == false) {
+    window.requestAnimationFrame(function() {
+      scrolling(e);
+      isScrolling = false;
+    });
+  }
+  isScrolling = true;
+}
+
+document.addEventListener("DOMContentLoaded", scrolling, false);
+
+var sectionContents = document.querySelectorAll(".section-content *:not(.view-project)");
+
+function scrolling(e) {
+  for (var i = 0; i < sectionContents.length; i++) {
+    var sectionContent = sectionContents[i];
+
+    if (isPartiallyVisible(sectionContent)) {
+      sectionContent.classList.add("active");
+    } 
+    else {
+      sectionContent.classList.remove("active");
+    }
+  }
+}
+
+function isPartiallyVisible(el) {
+  var elementBoundary = el.getBoundingClientRect();
+
+  var top = elementBoundary.top;
+  var bottom = elementBoundary.bottom;
+  var height = elementBoundary.height;
+
+  return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+}
