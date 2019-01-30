@@ -113,13 +113,13 @@ nav a .grey {
 
 /*Fade in/out when scrolling*/
 
-.section-content * {
+.fade-scroll * {
 	opacity: 0;
 	transform: translate(0px, 50px);
 	transition: all 0.7s ease-in-out;
 }
 
-.section-content .active {
+.fade-scroll .active {
 	opacity: 1;
 	transform: translate(0, 0);
 }
@@ -549,14 +549,18 @@ section {
 	background: linear-gradient(to bottom right, red, orange);
 	padding: 10px 25px;
 	padding-bottom: 20px;
+}
 
+.view-project p {
 	transform: translate(0px, 100vh);
-	transition: transform 0.7s;
+	opacity: 0;
+	transition: all 0.7s;
 }
 
 .proj:hover .view-project p, 
 .proj:focus .view-project p {
 	transform: translate(0px, 0px);
+	opacity: 1;
 }
 
 /*///////////////////////////////////*/

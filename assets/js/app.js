@@ -61,17 +61,17 @@ function throttleScroll(e) {
 
 document.addEventListener("DOMContentLoaded", scrolling, false);
 
-var sectionContents = document.querySelectorAll(".section-content *:not(.view-project)");
+var fadeScrolls = document.querySelectorAll(".fade-scroll *");
 
 function scrolling(e) {
-  for (var i = 0; i < sectionContents.length; i++) {
-    var sectionContent = sectionContents[i];
+  for (var i = 0; i < fadeScrolls.length; i++) {
+    var fadeScroll = fadeScrolls[i];
 
-    if (isPartiallyVisible(sectionContent)) {
-      sectionContent.classList.add("active");
-    } 
+    if (isPartiallyVisible(fadeScroll)) {
+      fadeScroll.classList.add("active");
+    }
     else {
-      sectionContent.classList.remove("active");
+      fadeScroll.classList.remove("active");
     }
   }
 }
