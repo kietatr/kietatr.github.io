@@ -525,10 +525,14 @@ section {
 }
 
 #proj-2 {
-	background-image: url("../img/gradient/gradient-overlay-r.svg"), url("../img/works/flavors-of-home.jpg");
+	background-image: url("../img/gradient/gradient-overlay-r.svg"), url("../img/works/floweree.png");
 }
 
 #proj-3 {
+	background-image: url("../img/gradient/gradient-overlay-r.svg"), url("../img/works/flavors-of-home.jpg");
+}
+
+#proj-4 {
 	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/LHP-branding.jpg");
 }
 
