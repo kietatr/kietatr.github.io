@@ -486,7 +486,7 @@ section {
 	text-align: center;
 }
 
-.projects {
+#Works .projects {
 	width: 80vw;
 }
 
@@ -520,19 +520,23 @@ section {
 
 /*Works -- Project Images*/
 
-#proj-1 {
+#proj-graphics {
 	background-image: url("../img/gradient/gradient-overlay.svg"), url("../img/works/comp-graphics.jpg");
 }
 
-#proj-2 {
+#proj-floweree {
 	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/floweree.png");
 }
 
-#proj-3 {
+#proj-tune-do {
+	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/tune-do.png");
+}
+
+#proj-flavors {
 	background-image: url("../img/gradient/gradient-overlay-r.svg"), url("../img/works/flavors-of-home.jpg");
 }
 
-#proj-4 {
+#proj-lhp {
 	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/LHP-branding.jpg");
 }
 
