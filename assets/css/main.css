@@ -98,13 +98,13 @@ p {
 	background-repeat: no-repeat;
 	background-size: 100% 0.3em;
 	background-position: 0 80%;
-	transition: 0.1s;
 }
 
 .underline--magical:hover, .underline--magical:active {
 	background-size: 100% 88%;
 	background-position: 0 0;
 	color: white;
+	transition: background-position 0.25s ease-in, background-size 0.25s ease-in;
 }
 
 nav a .grey {
@@ -116,7 +116,7 @@ nav a .grey {
 .fade-scroll * {
 	opacity: 0;
 	transform: translate(0px, 50px);
-	transition: all 0.7s ease-in-out;
+	transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
 }
 
 .fade-scroll .active {
