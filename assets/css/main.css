@@ -98,7 +98,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: 100% 0.3em;
 	background-position: 0 80%;
-	transition: 0.25s;
+	transition: 0.1s;
 }
 
 .underline--magical:hover, .underline--magical:active {
@@ -325,7 +325,8 @@ section {
 #Hi-bg-3 {
 	background-image: url("../img/backgrounds/Hi/Hi-bg-3.svg");
 	z-index: -3;
-	animation: spin 30s linear infinite;
+	/* animation: spin 30s linear infinite; */
+	animation: bounce 4s ease-in-out infinite;
 }
 
 @keyframes spin {
@@ -472,25 +473,25 @@ section {
 }
 
 /*///////////////////////////////////*/
-/*WORKS*/
+/*My-Projects*/
 /*///////////////////////////////////*/
 
-/*Works -- General*/
+/*My-Projects -- General*/
 
-#Works .section-content {
+#My-Projects .section-content {
 	/*Because the planet from About section has z-index: 1*/
 	z-index: 2;
 }
 
-#Works {
+#My-Projects {
 	text-align: center;
 }
 
-#Works .projects {
+#My-Projects .projects {
 	width: 80vw;
 }
 
-#Works .proj {
+#My-Projects .proj {
 	padding: 30vh 10vw;
 	margin: 10vh 0;
 
@@ -518,7 +519,7 @@ section {
 	z-index: 3;
 }
 
-/*Works -- Project Images*/
+/*My-Projects -- Project Images*/
 
 #proj-graphics {
 	background-image: url("../img/gradient/gradient-overlay.svg"), url("../img/works/comp-graphics.jpg");
@@ -529,7 +530,7 @@ section {
 }
 
 #proj-tune-do {
-	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/tune-do.png");
+	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/tune-do-darker.png");
 }
 
 #proj-flavors {
@@ -540,7 +541,7 @@ section {
 	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/LHP-branding.jpg");
 }
 
-/*Works -- "View Project" tag*/
+/*My-Projects -- "View Project" tag*/
 
 .view-project {
 	text-align: center;
