@@ -70,9 +70,9 @@ function scrolling(e) {
     if (isPartiallyVisible(fadeScroll)) {
       fadeScroll.classList.add("active");
     }
-    else {
-      fadeScroll.classList.remove("active");
-    }
+    // else {
+    //   fadeScroll.classList.remove("active");
+    // }
   }
 }
 

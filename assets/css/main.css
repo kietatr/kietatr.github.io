@@ -558,9 +558,7 @@ section {
 	background: linear-gradient(to bottom right, red, orange);
 	padding: 10px 25px;
 	padding-bottom: 20px;
-}
 
-.view-project p {
 	transform: translate(0px, 100vh);
 	opacity: 0;
 	transition: all 0.7s;
@@ -619,6 +617,7 @@ section {
 .contact-info a:hover p {
 	background: linear-gradient(to bottom right, red, orange);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
